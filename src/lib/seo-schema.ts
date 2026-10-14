@@ -1,0 +1,108 @@
+export const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+  "@id": "https://yewbdarjunk.com/#localbusiness",
+  name: "Yewbdar Junk Removal",
+  alternateName: "Yewbdar Junk Removal Atlanta",
+  url: "https://yewbdarjunk.com",
+  logo: "https://yewbdarjunk.com/icon.png",
+  image: "https://yewbdarjunk.com/og-image.png",
+  telephone: "+1-770-676-0810",
+  priceRange: "$95 - $650",
+  description:
+    "Fast, affordable same-day junk removal across Metro Atlanta. Free upfront firm estimates, 65% recycled or donated, and uniformed in-house crews. Lower prices than the 1-800 guys.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Peachtree St NE",
+    addressLocality: "Atlanta",
+    addressRegion: "GA",
+    postalCode: "30309",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 33.7490,
+    longitude: -84.3880,
+  },
+  areaServed: [
+    { "@type": "City", name: "Atlanta" },
+    { "@type": "AdministrativeArea", name: "Buckhead" },
+    { "@type": "City", name: "Sandy Springs" },
+    { "@type": "City", name: "Roswell" },
+    { "@type": "City", name: "Alpharetta" },
+    { "@type": "City", name: "Marietta" },
+    { "@type": "City", name: "Decatur" },
+    { "@type": "City", name: "Dunwoody" },
+    { "@type": "City", name: "Johns Creek" },
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "07:00",
+      closes: "19:00",
+    },
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    bestRating: "5",
+    worstRating: "1",
+    ratingCount: "700",
+    reviewCount: "700",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Junk Removal Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Single Item / Minimum Haul",
+          description: "Curbside or single appliance/furniture pickup.",
+        },
+        price: "95",
+        priceCurrency: "USD",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "1/4 Box Truckload",
+          description: "Small cleanout or multiple furniture items.",
+        },
+        price: "195",
+        priceCurrency: "USD",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "1/2 Box Truckload",
+          description: "Average room or garage declutter.",
+        },
+        price: "350",
+        priceCurrency: "USD",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Full 16-Foot Box Truckload",
+          description: "Major cleanout, whole attic, or hoarder clearance.",
+        },
+        price: "650",
+        priceCurrency: "USD",
+      },
+    ],
+  },
+};
